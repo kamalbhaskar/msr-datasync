@@ -4,6 +4,12 @@ import requests
 import json
 import os
 import shutil
+import logging
+import logconf
+
+#Setup logging
+logconf.setup_logging()
+logger = logging.getLogger(__name__)
 
 MSR_HOSTNAME = input("Enter the MSR hostname and press [ENTER]:")
 MSR_USER = input("Enter the MSR username and press [ENTER]:")
